@@ -1,0 +1,21 @@
+# Normalise line endings: LF in the repository, working tree left to the platform.
+* text=auto
+
+# Batch files break with LF-only endings under cmd.exe.
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binary: never convert.
+*.lib binary
+*.dll binary
+*.pdb binary
+*.obj binary
+*.exe binary
+*.dylib binary
+*.png binary
+*.ico binary
+*.bmp binary
+*.gif binary
+*.jpg binary
+*.zip binary
+*.7z binary

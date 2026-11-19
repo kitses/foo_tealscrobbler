@@ -1,0 +1,60 @@
+#include "resource.h"
+
+#include <windows.h>
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(65001)
+
+IDD_TEAL_PREFERENCES DIALOGEX 0, 0, 330, 259
+STYLE WS_CHILD | DS_3DLOOK | DS_SETFONT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+CONTROL         "Enable teal.fm", IDC_ENABLED, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 3, 7, 85, 10
+CONTROL         "Account", IDC_STATIC, "Button", BS_GROUPBOX, 3, 24, 324, 49
+LTEXT           "Handle:", IDC_STATIC, 9, 38, 30, 11
+EDITTEXT        IDC_HANDLE, 60, 35, 127, 12, ES_AUTOHSCROLL
+LTEXT           "App password:", IDC_STATIC, 9, 56, 48, 10
+EDITTEXT        IDC_PASSWORD, 60, 53, 127, 12, ES_PASSWORD | ES_AUTOHSCROLL
+CONTROL         "Submissions", IDC_STATIC, "Button", BS_GROUPBOX, 3, 80, 324, 40
+CONTROL         "Only submit tracks from the Media Library", IDC_MEDIA_LIBRARY_ONLY, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 9, 91, 158, 9
+CONTROL         "Submit tracks from dynamic sources (e.g., online streams)", IDC_DYNAMIC_SOURCES, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 9, 104, 279, 9
+CONTROL         "Field remappings", IDC_STATIC, "Button", BS_GROUPBOX, 3, 127, 324, 81
+LTEXT           "Artist:", IDC_STATIC, 9, 141, 48, 10
+EDITTEXT        IDC_ARTIST, 60, 138, 135, 12, ES_AUTOHSCROLL
+LTEXT           "Album:", IDC_STATIC, 9, 158, 48, 10
+EDITTEXT        IDC_ALBUM, 60, 155, 135, 12, ES_AUTOHSCROLL
+LTEXT           "Title:", IDC_STATIC, 9, 175, 48, 10
+EDITTEXT        IDC_TITLE, 60, 172, 135, 12, ES_AUTOHSCROLL
+LTEXT           "MB Track ID:", IDC_STATIC, 9, 191, 48, 10
+EDITTEXT        IDC_MB_TRACK, 60, 189, 135, 12, ES_AUTOHSCROLL
+LTEXT           "Static", IDC_STATUS, 3, 216, 324, 11
+PUSHBUTTON      "Submit", IDC_SUBMIT, 3, 228, 50, 14
+END
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1, 0, 0, 0
+PRODUCTVERSION 1, 0, 0, 0
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0x0L
+FILEOS 0x40004L
+FILETYPE 0x2L
+FILESUBTYPE 0x0L
+BEGIN
+BLOCK "StringFileInfo"
+BEGIN
+BLOCK "040904b0"
+BEGIN
+VALUE "FileDescription", "Tealscrobbler"
+VALUE "FileVersion", "1.0.0.0"
+VALUE "InternalName", "foo_tealscrobbler"
+VALUE "LegalCopyright", "EUPL-1.2"
+VALUE "OriginalFilename", "foo_tealscrobbler.dll"
+VALUE "ProductName", "Tealscrobbler"
+VALUE "ProductVersion", "1.0.0.0"
+END
+END
+BLOCK "VarFileInfo"
+BEGIN
+VALUE "Translation", 0x409, 1200
+END
+END

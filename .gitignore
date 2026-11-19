@@ -1,0 +1,28 @@
+# Build outputs
+/build/
+/test/test_teal_client.exe
+*.obj
+*.pdb
+*.ipdb
+*.iobj
+*.ilk
+*.exp
+*.pch
+*.res
+*.recipe
+*.lastbuildstate
+*.tlog/
+*.log
+
+# Resource editor state written beside src\foo_tealscrobbler.rc
+*.aps
+
+# Output directory of sdk\foobar2000\shared\shared.vcxproj
+/sdk/foobar2000/shared/x64/Release/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
