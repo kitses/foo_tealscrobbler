@@ -45,12 +45,12 @@ BEGIN
 BLOCK "040904b0"
 BEGIN
 VALUE "FileDescription", "Tealscrobbler"
-VALUE "FileVersion", "1.0.0.0"
+VALUE "FileVersion", "1.0.1.0"
 VALUE "InternalName", "foo_tealscrobbler"
 VALUE "LegalCopyright", "EUPL-1.2"
 VALUE "OriginalFilename", "foo_tealscrobbler.dll"
 VALUE "ProductName", "Tealscrobbler"
-VALUE "ProductVersion", "1.0.0.0"
+VALUE "ProductVersion", "1.0.1.0"
 END
 END
 BLOCK "VarFileInfo"
