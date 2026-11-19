@@ -12,9 +12,9 @@ BEGIN
 CONTROL         "Enable teal.fm", IDC_ENABLED, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 3, 7, 85, 10
 CONTROL         "Account", IDC_STATIC, "Button", BS_GROUPBOX, 3, 24, 324, 49
 LTEXT           "Handle:", IDC_STATIC, 9, 38, 30, 11
-EDITTEXT        IDC_HANDLE, 60, 35, 127, 12, ES_AUTOHSCROLL
+EDITTEXT        IDC_HANDLE, 60, 35, 135, 12, ES_AUTOHSCROLL
 LTEXT           "App password:", IDC_STATIC, 9, 56, 48, 10
-EDITTEXT        IDC_PASSWORD, 60, 53, 127, 12, ES_PASSWORD | ES_AUTOHSCROLL
+EDITTEXT        IDC_PASSWORD, 60, 53, 135, 12, ES_PASSWORD | ES_AUTOHSCROLL
 CONTROL         "Submissions", IDC_STATIC, "Button", BS_GROUPBOX, 3, 80, 324, 40
 CONTROL         "Only submit tracks from the Media Library", IDC_MEDIA_LIBRARY_ONLY, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 9, 91, 158, 9
 CONTROL         "Submit tracks from dynamic sources (e.g., online streams)", IDC_DYNAMIC_SOURCES, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 9, 104, 279, 9
