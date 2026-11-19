@@ -7,6 +7,12 @@ if not defined VSPATH (
 call "%VSPATH%\VC\Auxiliary\Build\vcvars64.bat" >nul
 pushd "%~dp0.."
 msbuild src\foo_tealscrobbler.vcxproj -m -p:Configuration=Release -p:Platform=x64 -p:PlatformToolset=v145 -v:minimal
+if errorlevel 1 (
+    popd & exit /b 1
+)
+set "DLL=build\x64\Release\foo_tealscrobbler.dll"
+set "PACKAGE=build\x64\Release\foo_tealscrobbler.fb2k-component"
+call "%~dp0package_component.cmd" "%DLL%" "%PACKAGE%"
 set "RESULT=%ERRORLEVEL%"
 popd
 exit /b %RESULT%

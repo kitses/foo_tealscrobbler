@@ -19,7 +19,7 @@ Output: `build\x64\Release\foo_tealscrobbler.dll`.
 
 ## Install
 
-Copy the DLL to `%APPDATA%\foobar2000-v2\user-components-x64\foo_tealscrobbler\` and restart foobar2000.
+Open `foo_tealscrobbler.fb2k-component` with foobar2000 (Preferences > Components > Install, or double-click the file), then restart foobar2000.
 
 ## Configure
 
