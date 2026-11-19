@@ -21,7 +21,7 @@ scrobbler *g_instance = nullptr;
 
 void log_line(const std::string &text)
 {
-    FB2K_console_formatter() << "teal.fm: " << text.c_str() << "\n";
+    FB2K_console_formatter() << "teal.fm: " << text.c_str();
 }
 
 } // namespace
